@@ -1,0 +1,35 @@
+<section class="section-bg">
+     <div class="container">  
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section-title" style="text-align: center; color:#7289ab;">
+                    <h2>Products</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {{#each product}}
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="single-product">
+                    <div class="product-thumb">
+                        <img src="/images/{{this.image}}" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h3><a href="#">{{this.name}}</a></h3>
+                    <h4><a href="">Rs : {{this.price}}</a></h4>
+                    </div>
+                    <div class="product-btns d-flex justify-content-between">
+                        <a href="#" class="btn-round " class="add-to-cart" title="Add to Cart"><i class="fa fa-shopping-cart"></i></a>
+                        <a href="#" class="btn-round" title="Add as Favorite"><i class="fa fa-heart"></i></a>
+                    </div>
+                </div>
+            </div>
+            {{/each}} 
+        </div>
+        <div class="row button-center">
+            <div class="col-xl-6 centered">
+                <a href="#" class="bttn-def"><span>Load more</span></a>
+            </div>
+        </div>
+     </div>
+ </section> 
